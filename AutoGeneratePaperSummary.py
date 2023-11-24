@@ -84,7 +84,7 @@ def getContent(paperClass, dirPath, OutlinePath):
             SparkApi.main(appid, api_key, api_secret, Spark_url, domain, question)
             getText("assistant", SparkApi.answer)
             indice = readlines.index(readline)
-            readlines.insert(indice + 1, '\t' + SparkApi.answer)
+            readlines.insert(indice + 1, SparkApi.answer)
             # if readline.strip().startswith('###'):
             # print('匹配成功')
             print(topic)
